@@ -1,0 +1,15 @@
+{
+  "name": "pigforumbot",
+  "version": "1.0.0",
+  "description": "Tired of pinging some role when you add a tag to a thread? Use the bot and whenever a tag is added to forum, the bot fetches the role with that name and pings it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5"
+  }
+}
