@@ -6,6 +6,7 @@ const {
 } = require("discord.js");
 const dotenv = require("dotenv");
 const handleThreadUpdate = require("./handleThreadUpdate");
+const handleThreadCreate = require("./handleThreadCreate");
 dotenv.config({ path: ".env" });
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
@@ -22,6 +23,10 @@ client.on(Events.ThreadUpdate, async (oldThread, newThread) => {
 	if (newThread.parent.type !== 15) return;
 	if (oldThread.appliedTags.length >= newThread.appliedTags.length) return;
 	await handleThreadUpdate(oldThread, newThread);
+});
+client.on(Events.ThreadCreate, async (thread) => {
+	if (thread.parent.type !== 15) return;
+	await handleThreadCreate(thread);
 });
 
 client.login(process.env.TOKEN);
