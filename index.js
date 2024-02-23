@@ -1,4 +1,9 @@
-const { Client, Events, GatewayIntentBits } = require("discord.js");
+const {
+	Client,
+	Events,
+	GatewayIntentBits,
+	ActivityType,
+} = require("discord.js");
 const dotenv = require("dotenv");
 const handleThreadUpdate = require("./handleThreadUpdate");
 dotenv.config({ path: ".env" });
@@ -6,6 +11,10 @@ dotenv.config({ path: ".env" });
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 client.once(Events.ClientReady, (readyClient) => {
+	client.user.setPresence({
+		activities: [{ name: "for tags", type: ActivityType.Watching }],
+		status: "dnd",
+	});
 	console.log(`Ready! Logged in as ${readyClient.user.tag}`);
 });
 
