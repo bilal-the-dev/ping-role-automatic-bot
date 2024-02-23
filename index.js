@@ -11,7 +11,7 @@ dotenv.config({ path: ".env" });
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 client.once(Events.ClientReady, (readyClient) => {
-	client.user.setPresence({
+	readyClient.user.setPresence({
 		activities: [{ name: "for tags", type: ActivityType.Watching }],
 		status: "dnd",
 	});
