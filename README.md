@@ -4,7 +4,7 @@ Tired of pinging some role when you add a tag to a thread? Use the bot and whene
 
 ## Video tutorial
 
-Wanna see how bot works actually? Watch the video on my [Twitter]() or [Linkedin]() or [Facebook]().
+Wanna see how bot works actually? Watch the video on my [Twitter](https://twitter.com/bilal_the_dev/status/1768145411888275484) or [Linkedin](https://www.linkedin.com/feed/update/urn:li:share:7173911060062613506/) or [Facebook](https://www.facebook.com/permalink.php?story_fbid=pfbid02rPnxJUScNvuANNcciutRiCLb9cLmsJ4aDhyFeQgKSJowc5YJa7ZEJeK1yxAo44yel&id=61556182875591&__cft__[0]=AZXUjMeWQatfICz7GwhZltbgq9LjXMzHmeqVCizVQIxn6YHoLJfNo6sNNSd_tcmIktVmFJYN7fzxrKm1pmN8Rqb55Wz_z_x6zRytHaB1aTEqzjAdsE9w-8LVZyAgQhp1qZG15WhcD6NasUixiZ3Hew0o&__tn__=%2CO%2CP-R).
 
 ## Installation
 
